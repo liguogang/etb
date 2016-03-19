@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.lark.ets</groupId>
+    <artifactId>common</artifactId>
+    <version>${lark.ets.common.version}</version>
+  </parent>
+  <artifactId>common-datasource</artifactId>
+  <name>common-datasource</name>
+  <url>http://www.hnlark.com</url>
+  <description>云雀易通共用数据源。第一期数据源共用，后续业务发展。将数据源拆分到各个模块</description>
+</project>

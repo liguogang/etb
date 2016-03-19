@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.lark.ets</groupId>
+    <artifactId>buy</artifactId>
+    <version>${lark.ets.buy.version}</version>
+  </parent>
+  <artifactId>buy-common</artifactId>
+  <name>buy-common</name>
+  <url>http://www.hnlark.com</url>
+  <description>该模块为域内共用的逻辑</description>
+  <dependencies>
+  </dependencies>
+</project>

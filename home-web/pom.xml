@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.lark.ets</groupId>
+		<artifactId>ets-parent</artifactId>
+		<version>0.0.1</version>
+	</parent>
+	<artifactId>home-web</artifactId>
+	<packaging>war</packaging>
+	<name>ets Maven Webapp</name>
+	<url>http://www.hnlark.com</url>
+	<dependencies>
+		<!-- 本项目提供的client模块 开始 -->
+		<dependency>
+			<groupId>com.lark.ets</groupId>
+			<artifactId>buy-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+		</dependency>
+		<!-- 本项目提供的client模块 结束 -->
+	</dependencies>
+	<build>
+		<finalName>ets</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<descriptors>
+						<descriptor>assembly/package.xml</descriptor>
+					</descriptors>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

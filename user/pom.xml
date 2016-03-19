@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.lark.ets</groupId>
+		<artifactId>ets-parent</artifactId>
+		<version>0.0.1</version>
+	</parent>
+	<artifactId>user</artifactId>
+	<version>${lark.ets.user.version}</version>
+	<packaging>pom</packaging>
+	<name>user</name>
+	<url>http://www.hnlark.com</url>
+	<dependencies>
+		<!-- <dependency> <groupId>com.lark.ets</groupId> <artifactId>user-client</artifactId> 
+			<version>0.0.1-SNAPSHOT</version> </dependency> -->
+	</dependencies>
+	<modules>
+		<module>user-common</module>
+		<module>user-model</module>
+		<module>user-manager</module>
+		<module>user-service</module>
+		<module>user-client</module>
+	</modules>
+</project>

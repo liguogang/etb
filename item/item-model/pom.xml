@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.lark.ets</groupId>
+    <artifactId>item</artifactId>
+    <version>${lark.ets.item.version}</version>
+  </parent>
+  <artifactId>item-model</artifactId>
+  <name>item-model</name>
+  <url>http://www.hnlark.com</url>
+  <description>该模块主要定义该域内使用的模型。如果是全局共用的模型应该定义到share中去</description>
+</project>
