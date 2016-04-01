@@ -10,7 +10,7 @@ package com.lark.ets.common.model.inf;
  * @author liguogang
  * @version $Id: ResultInfo.java, v 0.1 2016年3月19日 下午11:22:04 liguogang Exp $
  */
-public interface ResultAttachment {
+public interface ResponseAttachment {
     /***
      * 返回的结果码
      * 

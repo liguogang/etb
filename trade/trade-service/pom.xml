@@ -3,9 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.lark.ets</groupId>
+    <groupId>com.lark.etb</groupId>
     <artifactId>trade</artifactId>
-    <version>${lark.ets.trade.version}</version>
+    <version>${lark.etb.trade.version}</version>
   </parent>
   <artifactId>trade-service</artifactId>
   <name>trade-service</name>

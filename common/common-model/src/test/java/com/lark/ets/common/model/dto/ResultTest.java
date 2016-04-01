@@ -17,12 +17,12 @@ import com.lark.ets.common.model.unittest.UTConstant;
 public class ResultTest {
     @Test
     public void attachment() {
-        Result<String> result = new Result<String>();
+        Response<String> result = new Response<String>();
         result.setData("result test");
         result.attachment(ResultAttachmentEnum.SYSETM_ERROR.getAttachment());
         System.out.println(UTConstant.PASS_INFO + result);
 
-        Result<Integer> intResult = new Result<Integer>();
+        Response<Integer> intResult = new Response<Integer>();
 
         intResult.copyAttachment(result);
 

@@ -3,9 +3,9 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.lark.ets</groupId>
+    <groupId>com.lark.etb</groupId>
     <artifactId>common</artifactId>
-    <version>${lark.ets.common.version}</version>
+    <version>${lark.etb.common.version}</version>
   </parent>
   <artifactId>common-util</artifactId>
   <name>common-util</name>

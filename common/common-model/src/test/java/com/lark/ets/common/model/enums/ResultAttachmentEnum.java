@@ -5,7 +5,7 @@
 package com.lark.ets.common.model.enums;
 
 import com.lark.ets.common.model.dto.ResultAttachmentTest;
-import com.lark.ets.common.model.inf.ResultAttachment;
+import com.lark.ets.common.model.inf.ResponseAttachment;
 
 /**
  * 
@@ -26,7 +26,7 @@ public enum ResultAttachmentEnum {
         attachment.setSuccess(isSuccess);
     }
 
-    public final ResultAttachment getAttachment() {
+    public final ResponseAttachment getAttachment() {
         return this.attachment;
     }
 }

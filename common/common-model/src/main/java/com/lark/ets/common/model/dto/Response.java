@@ -8,17 +8,19 @@ import java.io.Serializable;
 import java.util.Map;
 
 import com.alibaba.fastjson.JSONObject;
-import com.lark.ets.common.model.inf.ResultAttachment;
+import com.lark.ets.common.model.inf.ResponseAttachment;
 
 /**
  * 
  * @author liguogang
  * @version $Id: Result.java, v 0.1 2016年3月19日 下午11:15:23 liguogang Exp $
  */
-public class Result<T> implements Serializable {
+public class Response<T> implements Serializable {
 
     /**  */
     private static final long   serialVersionUID = 1L;
+    // 串联一次上线文的唯一ID
+    private String              traceId;
     // 返回的数据
     private T                   data;
     // transform data,透传数据
@@ -37,7 +39,7 @@ public class Result<T> implements Serializable {
      * 
      * @param attachment
      */
-    public final void attachment(final ResultAttachment attachment) {
+    public final void attachment(final ResponseAttachment attachment) {
         if (null != attachment) {
             this.isInterrupt = attachment.isInterrupt();
             this.isSuccess = attachment.isSuccess();
@@ -51,13 +53,21 @@ public class Result<T> implements Serializable {
      * 
      * @param sourceResult
      */
-    public final void copyAttachment(final Result<?> sourceResult) {
-        if (null != sourceResult) {
-            this.isInterrupt = sourceResult.isInterrupt;
-            this.isSuccess = sourceResult.isSuccess;
-            this.code = sourceResult.code;
-            this.desc = sourceResult.desc;
+    public final void copyAttachment(final Response<?> sourceResponse) {
+        if (null != sourceResponse) {
+            this.isInterrupt = sourceResponse.isInterrupt;
+            this.isSuccess = sourceResponse.isSuccess;
+            this.code = sourceResponse.code;
+            this.desc = sourceResponse.desc;
         }
+    }
+    
+    public String getTraceId() {
+        return traceId;
+    }
+
+    public void setTraceId(String traceId) {
+        this.traceId = traceId;
     }
 
     public T getData() {

@@ -3,20 +3,20 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.lark.ets</groupId>
-	<artifactId>ets-parent</artifactId>
+	<groupId>com.lark.etb</groupId>
+	<artifactId>etb</artifactId>
 	<version>0.0.1</version>
 	<packaging>pom</packaging>
-	<name>ets-parent</name>
+	<name>etb-parent</name>
 	<url>http://www.hnlark.com</url>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<lark.ets.common.version>0.0.1-SNAPSHOT</lark.ets.common.version>
-		<lark.ets.user.version>0.0.1-SNAPSHOT</lark.ets.user.version>
-		<lark.ets.item.version>0.0.1-SNAPSHOT</lark.ets.item.version>
-		<lark.ets.buy.version>0.0.1-SNAPSHOT</lark.ets.buy.version>
-		<lark.ets.trade.version>0.0.1-SNAPSHOT</lark.ets.trade.version>
+		<lark.etb.common.version>0.0.1-SNAPSHOT</lark.etb.common.version>
+		<lark.etb.user.version>0.0.1-SNAPSHOT</lark.etb.user.version>
+		<lark.etb.item.version>0.0.1-SNAPSHOT</lark.etb.item.version>
+		<lark.etb.buy.version>0.0.1-SNAPSHOT</lark.etb.buy.version>
+		<lark.etb.trade.version>0.0.1-SNAPSHOT</lark.etb.trade.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -34,24 +34,24 @@
 		<dependencies>
 			<!-- 项目模块依赖 开始 -->
 			<dependency>
-				<groupId>com.lark.ets</groupId>
+				<groupId>com.lark.etb</groupId>
 				<artifactId>user-client</artifactId>
-				<version>${lark.ets.user.version}</version>
+				<version>${lark.etb.user.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.lark.ets</groupId>
+				<groupId>com.lark.etb</groupId>
 				<artifactId>item-client</artifactId>
-				<version>${lark.ets.item.version}</version>
+				<version>${lark.etb.item.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.lark.ets</groupId>
+				<groupId>com.lark.etb</groupId>
 				<artifactId>buy-client</artifactId>
-				<version>${lark.ets.buy.version}</version>
+				<version>${lark.etb.buy.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.lark.ets</groupId>
+				<groupId>com.lark.etb</groupId>
 				<artifactId>trade-client</artifactId>
-				<version>${lark.ets.trade.version}</version>
+				<version>${lark.etb.trade.version}</version>
 			</dependency>
 			<!-- 项目模块依赖 结束 -->
 			<dependency>

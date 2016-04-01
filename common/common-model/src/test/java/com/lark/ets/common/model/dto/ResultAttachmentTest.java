@@ -4,14 +4,14 @@
  */
 package com.lark.ets.common.model.dto;
 
-import com.lark.ets.common.model.inf.ResultAttachment;
+import com.lark.ets.common.model.inf.ResponseAttachment;
 
 /**
  * 
  * @author liguogang
  * @version $Id: ResultAttachmentTest.java, v 0.1 2016年3月19日 下午11:50:41 liguogang Exp $
  */
-public class ResultAttachmentTest implements ResultAttachment {
+public class ResultAttachmentTest implements ResponseAttachment {
     // 是否阻断主流程继续往下执行
     private boolean isInterrupt;
     // 返回结果是否成功

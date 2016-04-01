@@ -4,12 +4,12 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.lark.ets</groupId>
-		<artifactId>ets-parent</artifactId>
+		<groupId>com.lark.etb</groupId>
+		<artifactId>etb</artifactId>
 		<version>0.0.1</version>
 	</parent>
 	<artifactId>trade</artifactId>
-	<version>${lark.ets.trade.version}</version>
+	<version>${lark.etb.trade.version}</version>
 	<name>trade</name>
 	<url>http://www.hnlark.com</url>
 	<packaging>pom</packaging>

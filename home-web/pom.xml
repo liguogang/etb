@@ -4,18 +4,18 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.lark.ets</groupId>
-		<artifactId>ets-parent</artifactId>
+		<groupId>com.lark.etb</groupId>
+		<artifactId>etb</artifactId>
 		<version>0.0.1</version>
 	</parent>
 	<artifactId>home-web</artifactId>
 	<packaging>war</packaging>
-	<name>ets Maven Webapp</name>
+	<name>etb Maven Webapp</name>
 	<url>http://www.hnlark.com</url>
 	<dependencies>
 		<!-- 本项目提供的client模块 开始 -->
 		<dependency>
-			<groupId>com.lark.ets</groupId>
+			<groupId>com.lark.etb</groupId>
 			<artifactId>buy-client</artifactId>
 		</dependency>
 		<dependency>
@@ -25,7 +25,7 @@
 		<!-- 本项目提供的client模块 结束 -->
 	</dependencies>
 	<build>
-		<finalName>ets</finalName>
+		<finalName>etb</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>

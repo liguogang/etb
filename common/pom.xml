@@ -2,13 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>com.lark.ets</groupId>
-    <artifactId>ets-parent</artifactId>
+    <groupId>com.lark.etb</groupId>
+    <artifactId>etb</artifactId>
     <version>0.0.1</version>
   </parent>
   <artifactId>common</artifactId>
   <packaging>pom</packaging>
-  <version>${lark.ets.common.version}</version>
+  <version>${lark.etb.common.version}</version>
   <name>common</name>
   <url>http://www.hnlark.com</url>
   <description>云雀易通项目共用的模块</description>

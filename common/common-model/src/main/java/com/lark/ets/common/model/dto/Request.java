@@ -17,12 +17,22 @@ import com.alibaba.fastjson.JSONObject;
 public class Request<T> implements Serializable {
     /**  */
     private static final long   serialVersionUID = 1L;
+    // 一次请求串通上下文链路的唯一ID
+    private String              traceId;
     // 请求的参数
     private T                   param;
     // 请求参数中的扩展参数
     private Map<String, Object> extendParms;
     // 请求参数中的透传数据,要求回传到response
     private Map<String, Object> transData;
+    
+    public String getTraceId() {
+        return traceId;
+    }
+
+    public void setTraceId(String traceId) {
+        this.traceId = traceId;
+    }
 
     public T getParam() {
         return param;
