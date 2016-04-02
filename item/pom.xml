@@ -13,6 +13,25 @@
 	<name>item</name>
 	<url>http://www.hnlark.com</url>
 	<packaging>pom</packaging>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.lark.etb</groupId>
+				<artifactId>item-common</artifactId>
+				<version>${lark.etb.item.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.lark.etb</groupId>
+				<artifactId>item-model</artifactId>
+				<version>${lark.etb.item.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.lark.etb</groupId>
+				<artifactId>item-manager</artifactId>
+				<version>${lark.etb.item.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<modules>
 		<module>item-common</module>
 		<module>item-model</module>

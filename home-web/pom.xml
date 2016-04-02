@@ -16,7 +16,19 @@
 		<!-- 本项目提供的client模块 开始 -->
 		<dependency>
 			<groupId>com.lark.etb</groupId>
+			<artifactId>user-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.lark.etb</groupId>
+			<artifactId>item-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.lark.etb</groupId>
 			<artifactId>buy-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.lark.etb</groupId>
+			<artifactId>trade-client</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>

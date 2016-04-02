@@ -1,16 +1,21 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.lark.etb</groupId>
-    <artifactId>item</artifactId>
-    <version>${lark.etb.item.version}</version>
-  </parent>
-  <artifactId>item-client</artifactId>
-  <name>item-client</name>
-  <url>http://www.hnlark.com</url>
-  <description>该模块暴漏给其他模块。其他模块请求该域下的服务，通过此模块提供</description>
-  <dependencies>
-  </dependencies>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.lark.etb</groupId>
+		<artifactId>item</artifactId>
+		<version>${lark.etb.item.version}</version>
+	</parent>
+	<artifactId>item-client</artifactId>
+	<name>item-client</name>
+	<url>http://www.hnlark.com</url>
+	<description>该模块暴漏给其他模块。其他模块请求该域下的服务，通过此模块提供</description>
+	<dependencies>
+		<dependency>
+			<groupId>com.lark.etb</groupId>
+			<artifactId>item-model</artifactId>
+		</dependency>
+	</dependencies>
 </project>

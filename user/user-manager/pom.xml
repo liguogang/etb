@@ -1,14 +1,26 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.lark.etb</groupId>
-    <artifactId>user</artifactId>
-    <version>${lark.etb.user.version}</version>
-  </parent>
-  <artifactId>user-manager</artifactId>
-  <name>user-manager</name>
-  <url>http://www.hnlark.com</url>
-  <description>该模块主要负责数据相关的操作,包括数据库,redis,hbase等</description>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.lark.etb</groupId>
+		<artifactId>user</artifactId>
+		<version>${lark.etb.user.version}</version>
+	</parent>
+	<artifactId>user-manager</artifactId>
+	<name>user-manager</name>
+	<url>http://www.hnlark.com</url>
+	<description>该模块主要负责数据相关的操作,包括数据库,redis,hbase等</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.lark.etb</groupId>
+			<artifactId>user-common</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.lark.etb</groupId>
+			<artifactId>user-model</artifactId>
+		</dependency>
+	</dependencies>
 </project>

@@ -13,6 +13,15 @@
 	<name>trade</name>
 	<url>http://www.hnlark.com</url>
 	<packaging>pom</packaging>
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.lark.etb</groupId>
+				<artifactId>trade-model</artifactId>
+				<version>${lark.etb.trade.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<modules>
 		<module>trade-common</module>
 		<module>trade-model</module>

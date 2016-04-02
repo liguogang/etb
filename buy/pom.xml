@@ -13,8 +13,25 @@
 	<name>buy</name>
 	<url>http://www.hnlark.com</url>
 	<packaging>pom</packaging>
-	<dependencies>
-	</dependencies>
+		<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.lark.etb</groupId>
+				<artifactId>buy-common</artifactId>
+				<version>${lark.etb.buy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.lark.etb</groupId>
+				<artifactId>buy-model</artifactId>
+				<version>${lark.etb.buy.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.lark.etb</groupId>
+				<artifactId>buy-manager</artifactId>
+				<version>${lark.etb.buy.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 	<modules>
 		<module>buy-common</module>
 		<module>buy-model</module>

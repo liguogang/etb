@@ -9,7 +9,9 @@
 	<packaging>pom</packaging>
 	<name>etb-parent</name>
 	<url>http://www.hnlark.com</url>
-
+	<description>
+		云雀易采-跨境电商B2B综合服务(easy to buy)
+	</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<lark.etb.common.version>0.0.1-SNAPSHOT</lark.etb.common.version>
@@ -33,6 +35,21 @@
 	<dependencyManagement>
 		<dependencies>
 			<!-- 项目模块依赖 开始 -->
+			<dependency>
+				<groupId>com.lark.etb</groupId>
+				<artifactId>common-util</artifactId>
+				<version>${lark.etb.common.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.lark.etb</groupId>
+				<artifactId>common-model</artifactId>
+				<version>${lark.etb.common.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.lark.etb</groupId>
+				<artifactId>common-datasource</artifactId>
+				<version>${lark.etb.common.version}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.lark.etb</groupId>
 				<artifactId>user-client</artifactId>
