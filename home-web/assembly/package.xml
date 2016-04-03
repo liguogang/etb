@@ -6,13 +6,6 @@
     <formats>  
         <format>zip</format>  
     </formats>  
-	<fileSets>  
-        <fileSet>  
-            <directory>${project.basedir}\env\conf\${env}</directory>  
-            <outputDirectory>\</outputDirectory>  
-        </fileSet>  
-    </fileSets>
-      
     <dependencySets>  
         <dependencySet>  
             <useProjectArtifact>true</useProjectArtifact>  

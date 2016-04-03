@@ -168,7 +168,7 @@
 			<!-- file upload end -->
 		</dependencies>
 	</dependencyManagement>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -192,7 +192,7 @@
 				<directory>src/main/resources</directory>
 			</resource>
 			<resource>
-                <directory>>env/conf/${system.env}</directory>  
+				<directory>>src/main/env/dev</directory>
 			</resource>
 		</resources>
 	</build>
