@@ -43,6 +43,7 @@ public class OrderController extends BaseController implements InitializingBean 
         Map<String, String> data = new HashMap<String, String>();
         data.put("id", id);
         data.put("env", env);
+        
         this.autoResponse(request, response, model, data);
         return "buy/order";
     }
