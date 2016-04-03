@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error">
+	<Appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<ThresholdFilter level="debug" onMatch="ACCEPT"
+				onMismatch="DENY" />
+			<!-- Flow tracing is most useful with a pattern that shows location. Below 
+				pattern outputs class, line number and method name. -->
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n" />
+		</Console>
+		<!-- 共用的错误日志，所有的错误，都应该输出到这个错误日志中来 -->
+		<File name="common-error" fileName="/Users/liguogang/work/logs/etb/common-error.log"
+			append="true">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n" />
+			<param name="encoding" value="GBK" />
+			<ThresholdFilter level="ERROR" />
+		</File>
+		
+		<!-- 具体的业务日志数据-home-web -->
+		<File name="home-web" fileName="/Users/liguogang/work/logs/etb/home-web.log"
+			append="true">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} %-5level %class{36} %L %M - %msg%xEx%n" />
+			<param name="encoding" value="GBK" />
+			<param name="threshold" value="INFO" />
+		</File>
+
+		<RollingFile name="RollingFile" fileName="home-web.log"
+			filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">
+			<PatternLayout
+				pattern="%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n" />
+			<SizeBasedTriggeringPolicy size="500 MB" />
+		</RollingFile>
+
+	</Appenders>
+
+	<Loggers>
+		<logger name="com.lark.etb.web.controller" level="INFO"
+			additivity="true">
+			<appender-ref ref="home-web" />
+		</logger>
+		
+		<logger name="com.lark.etb" level="debug"
+			additivity="false">
+			<appender-ref ref="common-error" />
+			<appender-ref ref="console" />
+		</logger>
+
+		<Root level="error">
+			<AppenderRef ref="common-error" />
+		</Root>
+	</Loggers>
+</Configuration>

@@ -12,9 +12,9 @@
   <url>http://www.hnlark.com</url>
   <description>该模块暴漏给其他模块。其他模块请求该域下的服务，通过此模块提供</description>
   <dependencies>
-  	<dependency>
-  		<groupId>com.lark.etb</groupId>
-  		<artifactId>buy-model</artifactId>
-  	</dependency>
+  		<dependency>
+			<groupId>com.lark.etb</groupId>
+			<artifactId>buy-model</artifactId>
+		</dependency>
   </dependencies>
 </project>

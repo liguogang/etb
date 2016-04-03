@@ -30,6 +30,11 @@
 				<artifactId>buy-manager</artifactId>
 				<version>${lark.etb.buy.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.lark.etb</groupId>
+				<artifactId>buy-service</artifactId>
+				<version>${lark.etb.buy.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<modules>

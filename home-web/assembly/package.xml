@@ -6,16 +6,12 @@
     <formats>  
         <format>zip</format>  
     </formats>  
-<!--     <fileSets>  
+	<fileSets>  
         <fileSet>  
-            <directory>${project.basedir}\src\main\config</directory>  
-            过滤  
-            <excludes>  
-                <exclude>*.xml</exclude>  
-            </excludes>  
+            <directory>${project.basedir}\env\conf\${env}</directory>  
             <outputDirectory>\</outputDirectory>  
         </fileSet>  
-    </fileSets>  --> 
+    </fileSets>
       
     <dependencySets>  
         <dependencySet>  

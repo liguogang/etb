@@ -12,6 +12,8 @@
 	<packaging>war</packaging>
 	<name>etb Maven Webapp</name>
 	<url>http://www.hnlark.com</url>
+	<properties>
+	</properties>
 	<dependencies>
 		<!-- 本项目提供的client模块 开始 -->
 		<dependency>
@@ -30,11 +32,103 @@
 			<groupId>com.lark.etb</groupId>
 			<artifactId>trade-client</artifactId>
 		</dependency>
+		<!-- 本项目提供的client模块 结束 -->
+		<!-- 本项目的service发布 -->
+		<dependency>
+			<groupId>com.lark.etb</groupId>
+			<artifactId>user-service</artifactId>
+			<version>${lark.etb.user.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.lark.etb</groupId>
+			<artifactId>item-service</artifactId>
+			<version>${lark.etb.item.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.lark.etb</groupId>
+			<artifactId>buy-service</artifactId>
+			<version>${lark.etb.buy.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.lark.etb</groupId>
+			<artifactId>trade-service</artifactId>
+			<version>${lark.etb.trade.version}</version>
+		</dependency>
+		<!-- 本项目的service发布 -->
+
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 		</dependency>
-		<!-- 本项目提供的client模块 结束 -->
+		<!-- spring 依赖 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.session</groupId>
+			<artifactId>spring-session</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		<!-- spring 依赖结束 -->
+		<!-- mybatis 依赖 -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+		</dependency>
+		<!-- mybatis 依赖结束 -->
+		<!-- servlet 依赖 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+		</dependency>
+		<!-- servlet 依赖结束 -->
+		<!-- jackson -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+		<!-- jackson -->
+		<!-- file upload start -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+		</dependency>
+		<!-- file upload end -->
+		<!-- log4j2 start -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-1.2-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-jcl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-web</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- log4j2 end -->
 	</dependencies>
 	<build>
 		<finalName>etb</finalName>
