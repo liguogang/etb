@@ -192,7 +192,7 @@
 				<directory>src/main/resources</directory>
 			</resource>
 			<resource>
-				<directory>env/conf/${system.env}</directory>
+				<directory>env/${system.env}</directory>
 			</resource>
 		</resources>
 	</build>

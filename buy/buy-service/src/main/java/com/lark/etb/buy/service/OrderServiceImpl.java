@@ -26,12 +26,16 @@ public class OrderServiceImpl implements OrderService,InitializingBean{
     @Value("${env}")
     private String env;
     
+    @Value("${buy.version}")
+    private String version;
+    
     public void createOrder(){
         
     }
     
     public void afterPropertiesSet() throws Exception{
         logger.info("afterPropertiesSet,env={}",env);
+        logger.info("afterPropertiesSet,buy.version={}",version);
     }
 
     public String getEnv() {
