@@ -5,7 +5,16 @@
     <id>release</id>  
     <formats>  
         <format>zip</format>  
-    </formats>  
+    </formats>
+    <fileSets>  
+        <fileSet>  
+            <directory>env/conf/${system.env}</directory>
+            <includes>
+            	<include>*.properties</include>
+            </includes>  
+            <outputDirectory>WEB-INF/classes/</outputDirectory>  
+        </fileSet>  
+    </fileSets>   
     <dependencySets>  
         <dependencySet>  
             <useProjectArtifact>true</useProjectArtifact>  
