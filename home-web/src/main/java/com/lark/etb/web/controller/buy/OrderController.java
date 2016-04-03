@@ -14,10 +14,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.lark.etb.web.controller.base.BaseController;
 import com.lark.ets.buy.client.OrderServiceClient;
@@ -37,7 +39,7 @@ public class OrderController extends BaseController implements InitializingBean 
 
     private OrderServiceClient  orderService;
 
-    @RequestMapping("query/{id}.*")
+    @RequestMapping(value = {"{id}.*","{id}"},method = {RequestMethod.GET})
     public String queryOrder(HttpServletRequest request,HttpServletResponse response,Model model,@PathVariable String id) {
         logger.info("orderController,test,enter,id=[" + id + "]");
         Map<String, String> data = new HashMap<String, String>();
@@ -48,9 +50,10 @@ public class OrderController extends BaseController implements InitializingBean 
         return "buy/order";
     }
 
-    @RequestMapping("list")
-    public void list() {
+    @RequestMapping(value={""},method = {RequestMethod.GET})
+    public String list() {
         logger.info("orderController,test,enter");
+        return "buy/list";
     }
 
     public void afterPropertiesSet() throws Exception {

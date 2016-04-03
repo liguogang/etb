@@ -31,6 +31,6 @@
         <property name="exposeSpringMacroHelpers" value="false" /><!--是否使用spring对宏定义的支持-->  
         <property name="exposeRequestAttributes" value="false" /><!--是否开放request属性-->  
         <property name="requestContextAttribute" value="rc"/><!--request属性引用名称-->  
-        <property name="layoutUrl" value="layout/etb.vm"/><!--指定layout文件-->  
+        <property name="layoutUrl" value="layout/empty.vm"/><!--指定layout文件-->  
     </bean>
 </beans> 
