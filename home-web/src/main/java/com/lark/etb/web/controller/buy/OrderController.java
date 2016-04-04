@@ -40,7 +40,7 @@ public class OrderController extends BaseController implements InitializingBean 
 
     @RequestMapping(value = {"{id}.*","{id}"},method = {RequestMethod.GET})
     public String queryOrder(HttpServletRequest request,HttpServletResponse response,Model model,@PathVariable String id) {
-        logger.info("orderController,test,enter,id=[" + id + "]");
+        logger.info("orderController,test,enter,id={}",id );
         Map<String, String> data = new HashMap<String, String>();
         data.put("id", id);
         data.put("env", env);
@@ -56,10 +56,10 @@ public class OrderController extends BaseController implements InitializingBean 
     }
 
     public void afterPropertiesSet() throws Exception {
-        logger.debug("init,debug OrderController,env=" + env);
-        logger.info("init,info OrderController,env=" + env);
-        logger.warn("init,warn OrderController,env=" + env);
-        logger.error("init,error OrderController,env=" + env);
+        logger.debug("init,debug OrderController,env={}", env);
+        logger.info("init,info OrderController,env={}", env);
+        logger.warn("init,warn OrderController,env={}", env);
+        logger.error("init,error OrderController,env={}", env);
     }
 
     public OrderServiceClient getOrderServiceClient() {

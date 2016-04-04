@@ -10,6 +10,7 @@
                         http://www.springframework.org/schema/mvc    
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
 	<context:property-placeholder location="classpath:conf/*.properties" />
-	
-	<import resource="classpath*:spring/buy-service.xml" />
+	<!-- 业务层定义的bean注册进来,每个业务模块只需要import一个 -->
+	<import resource="classpath:spring/buy-spring.xml" />
+	<import resource="classpath:spring/trade-spring.xml" />
 </beans>
