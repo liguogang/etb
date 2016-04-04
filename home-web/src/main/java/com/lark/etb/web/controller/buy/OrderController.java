@@ -14,7 +14,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -37,7 +36,7 @@ public class OrderController extends BaseController implements InitializingBean 
     @Value("${env}")
     private String              env;
 
-    private OrderServiceClient  orderService;
+    private OrderServiceClient  orderServiceClient;
 
     @RequestMapping(value = {"{id}.*","{id}"},method = {RequestMethod.GET})
     public String queryOrder(HttpServletRequest request,HttpServletResponse response,Model model,@PathVariable String id) {
@@ -63,12 +62,12 @@ public class OrderController extends BaseController implements InitializingBean 
         logger.error("init,error OrderController,env=" + env);
     }
 
-    public OrderServiceClient getOrderService() {
-        return orderService;
+    public OrderServiceClient getOrderServiceClient() {
+        return orderServiceClient;
     }
 
-    public void setOrderService(OrderServiceClient orderService) {
-        this.orderService = orderService;
+    public void setOrderServiceClient(OrderServiceClient orderServiceClient) {
+        this.orderServiceClient = orderServiceClient;
     }
 
 }
