@@ -2,7 +2,8 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2016 All Rights Reserved.
  */
-package com.lark.etb.buy.service;
+package com.lark.etb.trade.service;
+
 
 
 
@@ -11,8 +12,6 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-
-import com.lark.ets.buy.service.OrderService;
 
 
 /**

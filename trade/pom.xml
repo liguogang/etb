@@ -20,6 +20,21 @@
 				<artifactId>trade-model</artifactId>
 				<version>${lark.etb.trade.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.lark.etb</groupId>
+				<artifactId>trade-common</artifactId>
+				<version>${lark.etb.trade.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.lark.etb</groupId>
+				<artifactId>trade-manager</artifactId>
+				<version>${lark.etb.trade.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.lark.etb</groupId>
+				<artifactId>trade-client</artifactId>
+				<version>${lark.etb.trade.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<modules>

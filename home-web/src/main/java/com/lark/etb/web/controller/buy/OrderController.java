@@ -20,8 +20,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.lark.etb.trade.client.OrderServiceClient;
 import com.lark.etb.web.controller.base.BaseController;
-import com.lark.ets.buy.client.OrderServiceClient;
 
 /**
  * 

@@ -11,4 +11,22 @@
   <name>trade-service</name>
   <url>http://www.hnlark.com</url>
   <description>该模块主要提供各项服务。主要的业务逻辑在该模块中实现</description>
+  	<dependencies>
+		<dependency>
+			<groupId>com.lark.etb</groupId>
+			<artifactId>trade-client</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+		</dependency>
+	</dependencies>
 </project>
