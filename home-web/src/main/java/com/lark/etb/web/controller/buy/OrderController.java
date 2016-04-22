@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.lark.etb.trade.client.OrderServiceClient;
+import com.lark.etb.trade.client.OrderServiceClientImpl;
 import com.lark.etb.web.controller.base.BaseController;
 
 /**
@@ -36,7 +36,7 @@ public class OrderController extends BaseController implements InitializingBean 
     @Value("${env}")
     private String              env;
 
-    private OrderServiceClient  orderServiceClient;
+    private OrderServiceClientImpl  orderServiceClient;
 
     @RequestMapping(value = {"{id}.*","{id}"},method = {RequestMethod.GET})
     public String queryOrder(HttpServletRequest request,HttpServletResponse response,Model model,@PathVariable String id) {
@@ -62,11 +62,11 @@ public class OrderController extends BaseController implements InitializingBean 
         logger.error("init,error OrderController,env={}", env);
     }
 
-    public OrderServiceClient getOrderServiceClient() {
+    public OrderServiceClientImpl getOrderServiceClient() {
         return orderServiceClient;
     }
 
-    public void setOrderServiceClient(OrderServiceClient orderServiceClient) {
+    public void setOrderServiceClient(OrderServiceClientImpl orderServiceClient) {
         this.orderServiceClient = orderServiceClient;
     }
 
